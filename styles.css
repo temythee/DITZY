@@ -6,6 +6,10 @@
     margin-top: 20px;
 }
 
+.image-container a {
+  text-decoration: none;
+}
+
 .space-block {
     width: 200px;         /* Fixed width of the space block */
     height: 25px;
@@ -38,10 +42,6 @@
 .instagram {
     width: 50px;  /* Set the desired width */
     height: auto;  /* Maintain aspect ratio */
-}
-
-a {
-  text-decoration: none;
 }
 
 .logo {
