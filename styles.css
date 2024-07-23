@@ -40,6 +40,10 @@
     height: auto;  /* Maintain aspect ratio */
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
     width: 525px;  /* Set the desired width */
     height: auto;  /* Maintain aspect ratio */
