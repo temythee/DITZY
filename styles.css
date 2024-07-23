@@ -46,6 +46,12 @@
     margin-bottom: 20px;
 }
 
+.header {
+    width: auto; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    font-size: 18px;
+}
+
 .wfiDotPinging{
     animation: wfiping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     width: 8px; 
