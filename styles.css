@@ -1,0 +1,137 @@
+.image-container img {
+    display: inline-block; /* Make images inline-block elements */
+    margin: 0 10px;        /* Add space between images (optional) */
+    max-width: 100%;       /* Ensure images are responsive */
+    height: auto;         /* Maintain aspect ratio */
+    margin-top: 20px;
+}
+
+.space-block {
+    width: 200px;         /* Fixed width of the space block */
+    height: 25px;
+    background-color: transparent;
+}
+
+#centered-div {
+    display: flex;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    height: 100vh;            /* Full viewport height for vertical centering */
+    text-align: center;       /* Center text within the div */
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: column;   /* Align items in a column */
+}
+
+#arial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36;
+    font-weight: bold;
+    color: #b6a9d6;
+}
+
+#times {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #b6a9d6;
+}
+
+.instagram {
+    width: 50px;  /* Set the desired width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.logo {
+    width: 525px;  /* Set the desired width */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.wfiDotPinging{
+    animation: wfiping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    width: 8px; 
+    height: 8px; 
+    border-radius: 9999px; 
+    position: absolute; 
+    opacity: 0.5;
+}
+
+.wfiDotStable{
+    width: 6px; 
+    height: 6px; 
+    border-radius: 9999px;
+}
+
+@keyframes wfiping {
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+
+.wfiFormDiv{
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem/* 8px */ * var(--tw-space-y-reverse));
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    @media not all and (min-width: 640px) {
+        align-items: center;
+    }
+    align-items: flex-start;
+}
+
+.wfiSubForm{
+    display: flex;
+    gap: 0.5rem;
+    @media not all and (min-width: 640px) {
+        flex-direction: column;
+    }
+}
+
+.wfiSocialProof{
+    display: flex;
+    gap: 0.5rem;
+    @media not all and (min-width: 640px) {
+        flex-direction: column;
+    }
+    justify-content: center;
+    align-items: center;
+}
+
+.wfiSocialProofAvatarGroup{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.wfiSocialProofDotGroup{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.wfiSocialProofDotSpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wfiSubmitSuccess{
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+    font-weight: 600;
+    border-radius: 0.5rem; /* 8px */
+    position: relative;
+    border-width: 1px;
+    width: 100%;
+    padding-left: 1.25rem/* 20px */;
+    padding-right: 1.25rem/* 20px */;
+    padding-top: 1rem/* 16px */;
+    padding-bottom: 1rem/* 16px */;
+
+    /* Need to make this adjustable in UI editor 
+        Need to also add a pseudoelement color for placeholder
+        */
+}
