@@ -1,6 +1,7 @@
 body {
     background-color: rgb(243, 241, 248);
 }
+
 .image-container img {
     display: inline-block; /* Make images inline-block elements */
     margin: 0 10px;        /* Add space between images (optional) */
