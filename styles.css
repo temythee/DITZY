@@ -1,5 +1,5 @@
 body {
-    color: rgb(243, 241, 248);
+    background-color: rgb(243, 241, 248);
 }
 .image-container img {
     display: inline-block; /* Make images inline-block elements */
