@@ -2,12 +2,22 @@ body {
   background-color: rgb(243, 241, 248);
 }
 
+html {
+  scroll-behavior: smooth;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: black;
+ } 
+
 .image-container img {
   display: inline-block; /* Make images inline-block elements */
   margin: 0 10px;        /* Add space between images (optional) */
   max-width: 100%;       /* Ensure images are responsive */
   height: auto;         /* Maintain aspect ratio */
   margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .image-container a {
@@ -24,6 +34,11 @@ body {
   width: 200px;
   height: 15px;
   background-color: transparent;
+}
+
+#top-div {
+  display: flex;
+  height: 5vh;
 }
 
 #centered-div {
@@ -46,9 +61,9 @@ body {
   font-family: 'Times New Roman', Times, serif;
   flex-direction: column;   /* Align items in a column */
   margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 500px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 230px;
 }
 
 #arial {
@@ -64,15 +79,29 @@ body {
   color: #b6a9d6;
 }
 
-#about {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
-  color: #b6a9d6;
-}
-
 .instagram {
   width: 50px;  /* Set the desired width */
   height: auto;  /* Maintain aspect ratio */
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.2);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+} 
+
+.scrollimage {
+  width: 80px;
+  height: auto;
+  animation: pulse 2s infinite;
 }
 
 .header {
@@ -103,6 +132,24 @@ body {
   }
 }
 
+.waitlist-button {
+  background-color: rgb(243, 241, 248);
+  height: 58px;
+  width: 225px;
+  border-width: 2px;
+  border-color: #b6a9d6;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 2px;
+  color: #b6a9d6;
+  transition: background-color 1s,
+    color 1s;
+}
+
+.waitlist-button:hover {
+  background-color: #b6a9d6;
+  color: rgb(243, 241, 248);
+}
 
 .wfiFormDiv{
   --tw-space-y-reverse: 0;
@@ -170,4 +217,3 @@ body {
       Need to also add a pseudoelement color for placeholder
       */
 }
-
