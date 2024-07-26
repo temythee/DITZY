@@ -36,6 +36,12 @@ html {
   background-color: transparent;
 }
 
+.xl-space-block {
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+}
+
 #top-div {
   display: flex;
   height: 5vh;
@@ -56,14 +62,14 @@ html {
   display: flex;
   justify-content: center;  /* Horizontal centering */
   align-items: center;      /* Vertical centering */
-  height: 50vh;            /* Full viewport height for vertical centering */
+  height: 80vh;            /* Full viewport height for vertical centering */
   text-align: center;       /* Center text within the div */
   font-family: 'Times New Roman', Times, serif;
   flex-direction: column;   /* Align items in a column */
   margin-top: 0px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 230px;
+  margin-bottom: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 #arial {
@@ -76,6 +82,12 @@ html {
 #times {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
+  color: #b6a9d6;
+}
+
+#ERC {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
   color: #b6a9d6;
 }
 
@@ -212,6 +224,11 @@ html {
   padding-right: 1.25rem/* 20px */;
   padding-top: 1rem/* 16px */;
   padding-bottom: 1rem/* 16px */;
+
+  /* Need to make this adjustable in UI editor 
+      Need to also add a pseudoelement color for placeholder
+      */
+}
 
   /* Need to make this adjustable in UI editor 
       Need to also add a pseudoelement color for placeholder
